@@ -1,0 +1,90 @@
+version: "3.1"
+# enev
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fee_str
+  - Academic_Programs
+  - placement_cell
+  - company
+  - library_cell
+  - doucment_req_addmission
+  - vision_mission
+  - about_college
+  - contact_us
+  - my_name
+  # use_entities:
+      # - name
+
+  # - out_of_scope
+
+entities:
+  - name
+
+responses:
+  utter_greet:
+  - text: "Hey... how can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is ssomething to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Adarsh's team." 
+
+  utter_fee_str:
+  - text: "For B.E 130000/yr\nFor M.E 45000/yr\nFor MBA 93000/yr\nFor MCA 45000/yr\nif any student comes from OBC, SC, ST, VJNT they get a special concession in fees for SC 100 percent of fees is paid by the government. For more details click the link 'https://mitra.ac.in/uploads/main-media-pdf/Computation_of_fee_UG_PG_MBA_MCA.pdf' or visit our college website 'https://mitra.ac.in/' "
+
+  utter_academic_programs:
+  - text: "Our college offers\nBachelor of Technology (B.Tech) in CSE, IT, MECH, CIVIL, E&TC, AI&DS and IOT\nMaster of Technology (M.Tech) in CSE, IT, MECH(thermal or CAD CAM), E&TC, SE and EE\nMaster of Business Administration (MBA) and Master in Computer Application (MCA).\nFor more information visit our college website 'https://mitra.ac.in/'."
+  
+  utter_placement_cell:
+  - text: "Heighest package is 30LPA \nAverage package is 4.5LPA\nOur Top Recrutier is Cognizant, Wipro, TCS, Capgemini, Infosys, Accenture, IBM and many more... List of Selected Students of 2022-23 Batch 'https://mitra.ac.in/uploads/main-media-pdf/Placement_2022_2023.pdf'. In 2022-23 514 students are get placed from our campus. For more information of visit our college website 'https://mitra.ac.in/'."
+  
+  utter_company:
+  - text: "Our Top Recrutier is Cognizant, Wipro, TCS, Capgemini, Infosys, Accenture, IBM and many more... For more information of visit our college website 'https://mitra.ac.in/site/training-placement'."
+
+  utter_library:
+  - text: "In our college library total no. of Books - 78068\nTotal Cost of Books	Rs. - 1,92,10,73004\nReference Books - 2049\nFully Computerized library system (Libsys software), NDL Membership to all Users, Current awareness service (International e-journals & National Journals), Printing & Scanning facility (free of cost).\nLibrary Hours\nMonday - Friday : 10:00 am to 6:00 pm.\nSaturday : 8:00 am to 4:30 pm.\nSunday & Holiday : Closed\nSpecial  arrangements are made to keep the Library open on Sunday & holidays as per demands of user."
+
+  utter_document_req:
+  - text: "For All Candidates- SSC Marketsheet, HSC Marksheet, CET/JEE/Gate Score Card, School/College Leaving Certificate(Transfer Certificate),Nationality Certificate, Domicile Certificate, Caste Certificate (if applicable), Caste Validity Certificate (if applicable), Income certificate, Form no. 16 is mandatory(For Scholarship / Freeship). For more details visit our college website 'https://mitra.ac.in/'"
+
+  utter_vision_mission:
+  - text: "VISION:-
+  To become a pace-setting Centre of excellence believing in three Universal values namely Synergy, Trust and Passion, with zeal to serve the Nation in the global scenario.
+  MISSION:-
+  M1: To achieve the highest standard in technical education through the state-of-the-art pedagogy and enhanced industry Institute linkages.
+  M2: To inculcate the culture of research in core and emerging areas.
+  M3: To strive for overall development of students so as to nurture ingenious technocrats as well as responsible citizens."
+ 
+  utter_about_college:
+  - text: "The Vidarbha Youth Welfare Society’s Prof. Ram Meghe Institute of Technology & Research, Badnera-Amravati is an Autonomous Institute which is established on 1983. The Grade ‘A+’ with CGPA is 3.43 Accredited by National Assessment and Accreditation Council (NAAC), Bangalore."
+
+  utter_contact_us:
+  - text: "Dr. G. R. Bamnote. Principal of Prof Ram Meghe Institute of Technology & Research, Anjangaon Bari Road, Badnera-Amravati 444 701 (M.S.)\nPhone No.: 0721-2681246 Ext. -202, Fax: 0721-2681337, Email: principal@mitra.ac.in."
+
+  utter_name:
+  - text: "hello, {name}..! \nhow can i help you {name}?"
+  
+  
+  # utter_out_of_scope:
+  # - text: "Sorry! please ask me quries about Prof. Ram Meghe Institute of Technology & Research"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
