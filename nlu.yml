@@ -1,0 +1,251 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning 
+    - good evening
+    - moin
+    - hey there
+    - let's go 
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - fine 
+    - I am feeling very good
+    - I am great
+    - I am fine
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: fee_str
+  examples: |
+    - what is the fees structure of your college?
+    - per year fees of your college?
+    - fees per year?
+    - fees?
+    - about fees
+    - about fee
+    - what amount of your college charge per year?
+    - feeship 
+    - b.tech one year fee
+    - B.E one year fees
+    - M.E one year fee
+    - Scholarship Provisions
+    - which types of scholarship provided by your college
+    - fees structure for out sider student 
+    - fees structure of your college
+
+- intent: Academic_Programs
+  examples: |
+    - what type of programs provided by your college
+    - what type of courses provided by your college 
+    - different type of courses 
+    - what different type of courses provided by your college
+    - courses offered by your college
+    - what type of branches in BE
+    - what type of department in BE 
+    - branches in BE 
+    - branches in b.tech
+    - courses of b.tech
+    - courses of B.E
+    - branches for bachelor of engineering 
+    - branches in ME
+    - department in ME
+    - department 
+    - programsss
+    - courses
+    - MBA is available or not in your college 
+
+- intent: placement_cell 
+  examples: |
+    - what is the heighest and average package of your college
+    - heighest and average package 
+    - placement details 
+    - placement records 
+    - job offers 
+    - job
+    - in 2022-23 placed students
+    - top placed students
+    - about your campus placement
+    - about placement
+    - about package 
+    - average package 
+    - campus placement 
+    - list of selected sutdents 
+    - heighest offers  
+    - heighest and avg. package 
+
+- intent: company 
+  examples: |
+    - company visit 
+    - which which comanies are visit in your college
+    - Top Recruiter of your college
+    - which companies visit your campus 
+    - which company is visit your college 
+    - company comes in your college
+    - about your college companies visit
+    - your Top Recrutier
+
+- intent: library_cell
+  examples: |
+    - what about Library facilities
+    - library facilities
+    - is your college have a library?
+    - college library
+    - about your college library 
+    - about your library
+
+- intent: doucment_req_addmission 
+  examples: |
+    - which documents are requeired for admission
+    - at the time of admission which document are required
+    - which which type of documents are required
+    - Document Required for Admission
+    - Documents Required for Admission
+    - Certificate required for admission 
+    - marksheet requied for admission 
+    - how many documents are required for admission 
+    - avalible documents for admission 
+    - about document required
+    - about document required for BE admission
+    - about document required for ME admission
+    - about document required for MBA admission
+    - about document required for MCA admission
+    
+
+- intent: vision_mission
+  examples: |
+    - vision and mission of your college
+    - vision 
+    - mission
+    - what is the vision of your college
+    - what is the mision of your college
+
+- intent: about_college
+  examples: |
+    - what about your college
+    - what is the nirf ranking of your college
+    - which year your college is stablished 
+    - Established year
+    - how old are your college
+    - say me something about your college
+    - tell me something about your college
+    - National Institutional Ranking Framework ranking
+    - National Assessment and Accreditation Council (NAAC)  grade
+    - about institute
+
+- intent: contact_us
+  examples: |
+    - how to contact your principle
+    - email of your college
+    - email of your college principle
+    - contact number of principle
+    - contact details 
+    - address of your college
+    - phone number
+    - who is the principal of your college
+    - principal contact
+
+- intent: my_name
+  examples: |
+    - my name is [adarsh jha] {"name"}
+    - hi, i am [adarsh jha] {"name"}
+    - my self [adarsh jha] {"name"}
+    - hi, my self [adarsh jha] {"name"}
+    - people call me [adarsh jha] {"name"} 
+    - [adarsh jha] {"name"} is my name
+
+# - intent: 
+
+# - intent: my_name
+#   examples: |
+#     - my name is [adarsh jha] {"entity":"name","value":"adarsh jha"}
+#     - hi, i am [adarsh jha] {"entity":"name","value":"adarsh jha"}
+#     - my self [adarsh jha] {"entity":"name","value":"adarsh jha"}
+#     - hi, my self [adarsh jha] {"entity":"name","value":"adarsh jha"}
+#     - people call me [adarsh jha] {"entity":"name","value":"adarsh jha"} 
+#     - [adarsh jha] {"entity":"name","value":"adarsh jha"} is my name
+#     - [adarsh jha] {"entity":"name","value":"adarsh jha"} this side 
+
+
+
+# - intent: out_of_scope
+#   examples: |
+#     - i whant to add a food
+#     - what is 2 + 2
+#     - kflajsljf jlfkas

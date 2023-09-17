@@ -1,0 +1,77 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fees
+  steps:
+  - intent: fee_str
+  - action: utter_fee_str
+
+- story: Academic
+  steps: 
+  - intent: Academic_Programs
+  - action: utter_academic_programs
+
+- story: Placement
+  steps: 
+  - intent: placement_cell
+  - action: utter_placement_cell
+  - intent: company 
+  - action: utter_company
+
+- story: Library
+  steps: 
+  - intent: library_cell
+  - action: utter_library
+
+- story: Document
+  steps:
+  - intent: doucment_req_addmission 
+  - action: utter_document_req
+
+- story: VISION&MISSION
+  steps:
+  - intent: vision_mission
+  - action: utter_vision_mission
+
+- story: About
+  steps:
+  - intent: about_college
+  - action: utter_about_college
+
+- story: Contact
+  steps:
+  - intent: contact_us
+  - action: utter_contact_us
+
+- story: Happy_name (name)
+  steps:
+  - intent: my_name
+  - action: utter_name
